@@ -164,4 +164,16 @@
 		</dependency>
 	</dependencies>
 
+	<distributionManagement>
+        <repository>
+            <id>Internal.Releases</id>
+            <name>Internal Releases</name>
+            <url>${releaseRepositoryUrl}</url>
+        </repository>
+        <snapshotRepository>
+            <id>Internal.Snapshots</id>
+            <name>Internal Snapshots</name>
+            <url>${snapshotRepositoryUrl}</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>

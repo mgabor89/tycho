@@ -49,6 +49,6 @@ public abstract class AbstractArtifactBasedProject extends AbstractTychoProject 
         if (version.endsWith(SNAPSHOT_VERSION)) {
             version = version.substring(0, version.length() - SNAPSHOT_VERSION.length()) + ".qualifier";
         }
-        return version;
+        return version.replaceAll("-", "\\.");
     }
 }
